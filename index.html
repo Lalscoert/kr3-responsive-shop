@@ -6,6 +6,7 @@
   <meta name="description" content="Учебный frontend-проект интернет-магазина.">
   <title>Учебный интернет-магазин</title>
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
   <script src="js/main.js" defer></script>
 </head>
 <body>
@@ -61,11 +62,16 @@
 
       <div class="products-grid">
         <article class="product-card">
-  <img
-    class="product-card__image"
-    src="images/product-1.png"
-    alt="Товар 1"
-  >
+ <img
+  class="product-card__image"
+  src="images/product-1.png"
+  srcset="images/product-1.png 640w"
+  sizes="(max-width: 639px) 100vw,
+         (max-width: 1023px) 50vw,
+         33vw"
+  alt="Товар 1"
+  loading="lazy"
+>
 
   <h3 class="product-card__title">Товар 1</h3>
   <p class="product-card__description">
