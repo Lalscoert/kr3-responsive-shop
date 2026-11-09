@@ -9,6 +9,7 @@
   <link rel="stylesheet" href="css/responsive.css">
 </head>
 <body>
+  <a class="skip-link" href="#main">Перейти к основному содержимому</a>
   <header class="site-header">
     <div class="site-header__inner">
       <a class="site-header__logo" href="index.html">ShopProject</a>
@@ -35,7 +36,7 @@
     </div>
   </header>
 
-  <main>
+  <main id="main" tabindex="-1">
     <nav class="breadcrumbs" aria-label="Хлебные крошки">
       <a class="breadcrumbs__link" href="index.html">Главная</a>
       <a class="breadcrumbs__link" href="catalog.html">Каталог</a>
@@ -54,30 +55,32 @@
     </section>
 
     <section class="section">
-      <table class="product-table">
-        <caption>Характеристики товара</caption>
-        <thead>
-          <tr>
-            <th>Параметр</th>
-            <th>Значение</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>Категория</td>
-            <td>Учебный товар</td>
-          </tr>
-          <tr>
-            <td>Цена</td>
-            <td>2000 руб.</td>
-          </tr>
-          <tr>
-            <td>Наличие</td>
-            <td>В наличии</td>
-          </tr>
-        </tbody>
-      </table>
-    </section>
+  <div class="table-wrapper">
+    <table class="product-table">
+      <caption>Характеристики товара</caption>
+      <thead>
+        <tr>
+          <th scope="col">Параметр</th>
+          <th scope="col">Значение</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">Категория</th>
+          <td>Учебный товар</td>
+        </tr>
+        <tr>
+          <th scope="row">Цена</th>
+          <td>1000 руб.</td>
+        </tr>
+        <tr>
+          <th scope="row">Наличие</th>
+          <td>В наличии</td>    
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</section>
   </main>
 
   <footer class="site-footer" id="contacts">
